@@ -44,9 +44,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('coffee-hero.jpg');
-    background-size: cover;
-    background-position: center;
+   
+
     color: rgb(247, 241, 241);
     padding: 100px 0;
     text-align: center;
@@ -97,7 +96,7 @@ body {
 
  /* carousel Section */  
 .carousel {
-    width: 50%;
+    width: 70%;
     margin: 10px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -244,8 +243,21 @@ footer p {
       font-size: 16px;
       padding: 10px;
     }
-  
-   
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 5px;
+        color: rgb(24, 23, 23);
+        max-width:100%;
+    }
+    .navbar ul{
+         
+        transform: scale(.8);
+        align-items: center;
+       
+    }
   
     img {
       max-width: 100%; /* Evita que las imágenes excedan el ancho de la pantalla */
