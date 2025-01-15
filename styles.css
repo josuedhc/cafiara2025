@@ -1,0 +1,239 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e0d0d;
+    color: #f7f2f2;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    color: rgb(24, 23, 23);
+}
+
+.navbar .logo h1 {
+    font-size: 3rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('coffee-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(247, 241, 241);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #b08d57;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.hero .btn:hover {
+    background-color: #6a4e23;
+}
+
+/* About Section */
+.about {
+    padding: 50px 30px;
+    text-align: center;
+    
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+ /* carousel Section */   
+}
+.carousel {
+    width: 50%;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+}
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #201f1f;
+}
+
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3  {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #201f1f;
+}
+
+.product p {
+    font-size: 1.1rem;
+    color: #181717;
+}
+.product {
+    width: 300px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    border-radius: 8px;
+}
+
+.product:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra */
+    filter: brightness(1.2); /* Aumenta el brillo */
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 50px 30px;
+    background-color: #0a0a0a;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #474545;
+    font-size: 1rem;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #b08d57;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    background-color: #6a4e23;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+.social a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}

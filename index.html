@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafiara</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icono1.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"> 
+           
+            <img src="icono1.png" alt="inicio">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <img src="inicio.png" alt="inicio">
+            <h2>El sabor perfecto para empezar el día</h2>
+            <p>Sabemos que cuando se produce con amor, se ofrece con responsabilidad.</p>
+            <p>Somos productores de café, tostando y comercializando los mejores granos.</p>
+            <a href="#products" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <img src="nosotros1.png" alt="nosotros">
+        <p>Nuestro producto sembrado y cosechado en la sierra nororiental de puebla cuenta con la garantia y frescura que siempre nos ha caracterizado.</p>
+        
+    </section>
+    <!-- Carousel -->
+    <section id="carousel" class="carousel">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="nosotros1.png" alt="Imagen 1">
+                <img src="nosotros1.png" alt="Imagen 2">
+                <img src="nosotros1.png" alt="Imagen 3">
+            </div>
+            <div class="carousel-buttons">
+                <button id="prev">&laquo;</button>
+                <button id="next">&raquo;</button>
+            </div>
+        </div>
+    
+        <script>
+            const carouselImages = document.querySelector('.carousel-images');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+            const totalImages = document.querySelectorAll('.carousel img').length;
+            let currentIndex = 0;
+    
+            function updateCarousel() {
+                const width = document.querySelector('.carousel img').clientWidth;
+                carouselImages.style.transform = `translateX(-${currentIndex * width}px)`;
+            }
+    
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+                updateCarousel();
+            });
+    
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+                updateCarousel();
+            });
+    
+            window.addEventListener('resize', updateCarousel);
+        </script>
+    </section>
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Nuestros Productos</h2>
+        <div class="product-container">
+            
+            <div class="product">
+                
+                <img src="uno.png" alt="Uno">
+                <p>$230.00</p>
+                <p>Mayoreo</p>
+                <h3>Café premium americano 1 Kg.</h3>
+                <p>Grano o Molido</p>
+            </div>
+            <div class="product">
+                <img src="dos.jpg" alt="Dos">
+                <p>$120.00</p>
+                <p>Mayoreo</p>
+                
+                <h3>Café Premium americano 500 Gr.</h3>
+                <p>Grano o Molido</p>
+            </div>
+            <div class="product">
+                <img src="tres.jpg" alt="Tres">
+                <p>$75.00</p>
+                <p>Menudeo</p>
+                <h3>Bolsa de 250 grs.</h3>
+                <p>Grano o Molido</p>
+            </div>
+            <div class="product">
+                <img src="cuatro.jpg" alt="Cuatro">
+                <p>$140.00</p>
+                <p>Menudeo</p>
+                <h3>Bolsa de 454 grs.</h3>
+                <p>Grano o Molido</p>
+            </div>
+            <div class="product">
+                <img src="cinco.jpg" alt="Cinco">
+                <p>$180.00 x kg.</p>
+                <h3>Sacos a granel con capacidad de 20 Kg.</h3>
+                <p>Grano o Molido</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section-->
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna duda o consulta? ¡Contáctanos y te ayudaremos!</p>
+            <p>Domicilio: Huitzilan de Serdán Puebla</p>
+            <p>Email: C.cafiara@gmail.com</p>
+            <p>Movil: (222) 4-36-09-19</p>
+            <div class="social">
+                <a href="https://www.facebook.com/people/Cafiara/100057354253320/?locale=es_LA&_rdr" target="_blank" rel="noopener noreferrer">Facebook</a> 
+            </div>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo" required>
+                <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+           
+            <p>&copy; 2025 CAFIARA. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+    </html>
+    
