@@ -256,7 +256,8 @@ footer p {
     }
 
     .navbar .logo{
-        max-width: 100%; 
+        /*max-width: 100%;*/
+        transform: scale(1.2); 
     }
     .navbar ul{
         
