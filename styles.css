@@ -10,38 +10,58 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #0e0d0d;
     color: #f7f2f2;
-    line-height: 1.6;
+    line-height: 1.9;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    padding: 20px;
-    color: rgb(24, 23, 23);
-}
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    color: rgb(37, 36, 36);
+  }
 
-.navbar .logo h1 {
-    font-size: 3rem;
-}
-
-.navbar .nav-links {
+  .nav-links {
     list-style: none;
-    display: flex;
-}
+    padding: 0;
+    margin: 0;
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column;
+  }
 
-.navbar .nav-links li {
-    margin-left: 20px;
-}
+  .nav-links li {
+    margin: 10px 0;
+  }
 
-.navbar .nav-links a {
-    color: rgb(22, 21, 21);
-    text-decoration: none;
-    font-size: 1.5rem;
+  .nav-links a {
     font-weight: bold;
-}
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-size: 150%
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 4px;
+    background-color: rgb(33, 31, 31);
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* Mostrar menú al activar */
+  .nav-links.active {
+    display: flex;
+  }
 
 /* Hero Section */
 .hero {
@@ -239,42 +259,21 @@ footer p {
     margin: 0 10px;
 }
 
-@media (max-width: 768px) {
-    body {
-      font-size: 1px;
-      padding: 5px;
-    }
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #ffffff;
-        padding: .1px;
-        color: rgb(24, 23, 23);
-        max-width:100%;
-       
+/* Responsivo: Mostrar solo el botón en pantallas pequeñas */
+@media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
     }
 
-    .navbar .logo{
-        max-width: 100%;
-       /* transform: scale(1.2);*/ 
+    .nav-links {
+      display: flex;
+      flex-direction: row;
     }
-    .navbar ul {
-        align-items: center;
-        font-size: 12px;
-        width: 85%;
-    }
-   
-    .carousel {
-        width: 95%;
-        margin: 10px auto;
-        overflow: hidden;
-        border-radius: 10px;
-        position: relative;
-    }
-  
-    img {
-      max-width: 100%; /* Evita que las imágenes excedan el ancho de la pantalla */
-      height: auto;
+
+    .nav-links li {
+      margin: 0 15px;
     }
   }
+
+
+

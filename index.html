@@ -8,12 +8,17 @@
     <link rel="icon" href="icono1.png">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">  
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo" id="logo">  
             <img src="icono1.png" alt="inicio">
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="#about">Sobre Nosotros</a></li>
             <li><a href="#products">Productos</a></li>
             <li><a href="#contact">Contacto</a></li>
@@ -52,31 +57,6 @@
                 <button id="next">&raquo;</button>
             </div>
         </div>
-    
-        <script>
-            const carouselImages = document.querySelector('.carousel-images');
-            const prevButton = document.getElementById('prev');
-            const nextButton = document.getElementById('next');
-            const totalImages = document.querySelectorAll('.carousel img').length;
-            let currentIndex = 0;
-    
-            function updateCarousel() {
-                const width = document.querySelector('.carousel img').clientWidth;
-                carouselImages.style.transform = `translateX(-${currentIndex * width}px)`;
-            }
-    
-            prevButton.addEventListener('click', () => {
-                currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
-                updateCarousel();
-            });
-    
-            nextButton.addEventListener('click', () => {
-                currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
-                updateCarousel();
-            });
-    
-            window.addEventListener('resize', updateCarousel);
-        </script>
     </section>
     <!-- Products Section -->
     <section id="products" class="products">
@@ -118,7 +98,6 @@
                 <h3>$180.00 por Kg.</h3>
                 <p>Precio Especial a mayoristas e intermediarios, presentación a granel en sacos de 20Kg.</p>
             </div>
-
         </div>
     </section>
 
@@ -143,9 +122,11 @@
     
         <!-- Footer -->
         <footer>
-           
             <p>&copy; 2025 CAFIARA. Todos los derechos reservados.</p>
         </footer>
+        <script src="script.js"></script>
     </body>
     </html>
+
+   
     
