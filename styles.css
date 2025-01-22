@@ -271,9 +271,12 @@ footer p {
     }
 
     .nav-links li {
-      margin: 0 15px;
+      margin: 0 35px;
     }
-  }
+    .hero  #inicio{
+        object-fit: cover;
+    }
 
+}
 
 
