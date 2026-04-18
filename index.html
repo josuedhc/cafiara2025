@@ -19,8 +19,17 @@
             <img src="icono1.png" alt="inicio">
         </div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#about">Sobre Nosotros</a></li>
-            <li><a href="#products">Productos</a></li>
+            <li><a href="#about" >Sobre Nosotros</a></li>
+            <li class="submenu-padre" id="submenu-padre"><a href="#">Productos</a>
+                <ul class="submenu" id="submenu" >
+                    <li><a href="#"> </a></li>
+                    <li><a href="#products">Nuestros Productos</a></li>
+                    <li><a href="#productsVER">Verde a Granel </a></li>
+                    <li><a href="#productstTOS">Tostato a Granel </a></li>
+                    <li><a href="#productsRES">Restaurante y/o Cafetería </a></li>
+                </ul>
+            </li>
+           
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
@@ -29,8 +38,7 @@
     <section class="hero">
         <div class="hero-text">
             <img src="inicio.png" alt="inicio" id="inicio">
-            <h2>El sabor perfecto para empezar el día</h2>
-            <p>"En CAFIARA sabemos que cuando se produce con amor, se cosecha con calidad".</p>
+            <h3>"Cuando se produce con amor, se cosecha con calidad."</h3>
             <p>Somos productores, tostamos y comercializamos nuestros mejores granos de café.</p>
             <a href="#products" class="btn">Ver Productos</a>
         </div>
@@ -39,24 +47,27 @@
     <!-- About Section -->
     <section id="about" class="about">
         <h2>Sobre Nosotros</h2>
-        <img src="nosotros1.png" alt="nosotros" id="nosotros">
+        <video width="640" autoplay muted loop height="460"  id="nosotros">
+            <source src="informacion.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
         <p>Nuestro producto sembrado y cosechado en la sierra nororiental de Puebla cuenta con la garantia y frescura que siempre nos ha caracterizado.</p>
-        
     </section>
-    <!-- Carousel -->
+
     <section id="carousel" class="carousel">
-        <div class="carousel">
-            <div class="carousel-images">
-                <img src="car1.png" alt="Imagen 1">
-                <img src="car2.png" alt="Imagen 2">
-                <img src="car3.png" alt="Imagen 3">
-                <img src="car4.png" alt="Imagen 4">
-                <img src="car5.png" alt="Imagen 5">
-                <img src="car6.png" alt="Imagen 6">
-            </div>
-            <div class="carousel-buttons">
-                <button id="prev">&laquo;</button>
-                <button id="next">&raquo;</button>
+        <div class="content-all">
+            <div class="content-carrousel">
+                <figure><img src="car5.jpg"></figure>
+                <figure><img src="car6.jpg"></figure>
+                <figure><img src="car8.jpg"></figure>
+                <figure><img src="car11.png"></figure>
+                <figure><img src="car8.png"></figure>
+                <figure><img src="car9.png"></figure>
+                <figure><img src="car5.jpg"></figure>
+                <figure><img src="car1.png"></figure>
+                <figure><img src="car10.png"></figure>
+                <figure><img src="car9.jpg"></figure>
+               
             </div>
         </div>
     </section>
@@ -68,42 +79,167 @@
             <div class="product">
                 
                 <img src="uno.png" alt="Uno">
+               
+                <h3>Café premium americano Presentación en Bolsa de 1 Kg.</h3>
+                <p>Grano o Molido</p>
+                <p>Mayoreo a partir de 5 kilogramos </p>
                 <h3>$270.00</h3>
                 <p>Mayoreo</p>
                 <h3>$299.00</h3>
                 <p>Menudeo</p>
-                <h3>Café premium americano 1 Kg.</h3>
-                <p>Grano o Molido</p>
-                <p>Mayoreo a partir de 5 kilogramos </p>
             </div>
             <div class="product">
                 <img src="dos.png" alt="Dos">
+               
+                
+                <h3>Café Premium americano Presentación en Bolsa de 500 g.</h3>
+                <p>Grano o Molido</p>
+                <p>Mayoreo a partir de 5 kilogramos </p>
                 <h3>$160.00</h3>
                 <p>Mayoreo</p>
                 <h3>$189.00</h3>
                 <p>Menudeo</p>
-                
-                <h3>Café Premium americano 454 g.</h3>
-                <p>Grano o Molido</p>
-                <p>Mayoreo a partir de 5 kilogramos </p>
             </div>
             <div class="product">
                 <img src="cuatro.png" alt="Cuatro">
+                
+                <h3>Presentación en Bolsa de 250 g.</h3>
+                <p>Grano o Molido</p>
+                <p>Mayoreo a partir de 5 kilogramos </p>
                 <h3>$90.00</h3>
                 <p>Mayoreo</p>
                 <h3>$105.00</h3>
                 <p>Menudeo</p>
-                <h3>Bolsa de 250 g.</h3>
-                <p>Grano o Molido</p>
-                <p>Mayoreo a partir de 5 kilogramos </p>
             </div>
+
             <div class="product">
                 <img src="cinco.png" alt="Cinco"> 
-                <h3>$240.00 por Kg.</h3>
-                <p>Precio Especial a mayoristas e intermediarios, presentación a granel en sacos de 20Kg.</p>
+               
+                <h3>Contactanos tenemos precios especiales a mayoristas en sacos de 50 KG. (Café tostado y verde).</h3>
+                
             </div>
+          
         </div>
     </section>
+
+   
+
+
+    <!-- Products Section granel VERDE -->
+    <section id="productsVER" class="products">
+        <h2>Café Verde a Granel</h2>
+        <h2>Altura </h2>
+        <h2>Variedades MARSELLESA, ORO AZTECA Y COLOMBIA</h2>
+        <div class="product-container">
+            
+            <div class="product">
+                
+                <img src="seis.png" alt="Uno">
+                <h3>Calidad Premium 1RA Seleccion .</h3>
+                <p>Sacos de 50 kG. </p>
+                <h3>$9,000.00</h3>
+                
+            </div>
+            <div class="product">
+                <img src="seis.png" alt="Dos">
+                <h3>Calidad Desmanche</h3>
+                <p>Sacos de 50 kG. </p>
+                <h3>$8,750.00</h3>
+                <p>(Más costo de envío) </p>
+               
+            </div>
+            <div class="product">
+                <img src="seis.png" alt="Cuatro">
+                
+                <h3>Calidad Café Bola</h3>
+                <p>Sacos de 50 kG. </p>
+                <h3>$8,000.00</h3>
+                <p>(Más costo de envío) </p>
+            </div>          
+        </div>
+    </section>
+
+        <!-- Products Section tostato a granel  -->
+        <section id="productstTOS" class="products">
+            <h2>Café Tostado a Granel</h2>
+            <div class="product-container">
+                
+                <div class="product">
+                    
+                    <img src="car1.png" alt="Uno">
+                    <h3>Cafiara Tostado Grano Calidad Premium.</h3>
+                    <p>Sacos de 50 kG. </p>
+                    <h3>$11,500.00</h3>
+                    <p>(Más costo de envío) </p>
+                    
+                </div>
+                <div class="product">
+                    <img src="car1.png" alt="Dos">
+                    <h3>Cafiara Tostado Molido Calidad Premium.</h3>
+                    <p>Sacos de 50 kG. </p>
+                    <h3>$11,500.00</h3>
+                    <p>(Más costo de envío) </p>
+                   
+                </div>
+                <div class="product">
+                    <img src="car1.png" alt="Cuatro">
+                    
+                    <h3>Cafiara Tostado Grano Calidad Café Bola.</h3>
+                    <p>Sacos de 50 kG. </p>
+                    <h3>$9,000.00</h3>
+                    <p>(Más costo de envío) </p>
+                </div>     
+                <div class="product">
+                    <img src="car1.png" alt="Cuatro">
+                    
+                    <h3>Cafiara Tostado Molido Calidad Café Bola.</h3>
+                    <p>Sacos de 50 kG. </p>
+                    <h3>$9,000.00</h3>
+                    <p>(Más costo de envío) </p>
+                </div>       
+            </div>
+        </section>
+
+          <!-- Products Section tostado RESTAURANTE O CAFE  -->
+          <section id="productsRES" class="products">
+            <h2>Café Tostado para tu Restaurante y/o Cafetería</h2>
+            <h3>Sin costo de envío en la ciudad de Puebla. (Foraneos más costo de envío)
+            </h3>
+            <div class="product-container">
+                
+                <div class="product">
+                    
+                    <img src="uno.png" alt="Uno">
+                    <h3>Cafiara Café Tostado Grano (10 unidades 1000 G.)</h3>
+                    <h3>$2,700.00</h3>
+                    <p>(Más costo de envío) </p>
+                </div>
+                <div class="product">
+                    <img src="uno.png" alt="Dos">
+                    <h3>Cafiara Tostado Molido (10 unidades 1000 G.)</h3>
+                    <h3>$2,500.00</h3>
+                    <p>(Más costo de envío) </p>
+                   
+                </div>
+                <div class="product">
+                    <img src="uno.png" alt="Cuatro">
+                    
+                    <h3>Kit de Café (7 Kilos Grano + 7 Kilos Molido)Calidad Premium.</h3>
+                   
+                    <h3>$3,220.00 (Ahorras $420.00)</h3>
+                    <p>(Más costo de envío) </p>
+                </div>     
+               
+            </div>
+        </section>
+
+      
+      
+            
+        
+
+
+
 
     <!-- Contact Section-->
         <!-- Contact Section -->
@@ -112,7 +248,7 @@
             <p>¿Tienes alguna duda o consulta? ¡Contáctanos y te ayudaremos!</p>
             <p>Domicilio: Huitzilan de Serdán Puebla</p>
             <p>Email: c.cafiara@gmail.com </p>
-            <p>Solo WhatsApp  (222) 4-36-09-19</p>
+            <p>Solo WhatsApp  233-759-8686 </p>
             <div class="social">
                 <a href="https://www.facebook.com/people/Cafiara/100057354253320/?locale=es_LA&_rdr" target="_blank" rel="noopener noreferrer">Facebook</a> 
             </div>
@@ -129,6 +265,7 @@
             <p>&copy; 2025 CAFIARA. Todos los derechos reservados.</p>
         </footer>
         <script src="script.js"></script>
+       
     </body>
     </html>
 
